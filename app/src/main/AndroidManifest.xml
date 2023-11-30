@@ -25,23 +25,12 @@
             </intent-filter>
 
             <meta-data android:name="flutter_deeplinking_enabled" android:value="true" />
-            <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http"/>
-                <data android:host="holu.fastark.in"/>
-                <data android:pathPrefix="/assets"/>
-                <data android:scheme="https" />
-            </intent-filter>
 
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data
-                    android:scheme="pettera"
-                    android:host="my_app" />
+                <data android:scheme="pettera" />
             </intent-filter>
 
         </activity>
